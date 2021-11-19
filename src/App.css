@@ -1,1 +1,41 @@
+.app-container {
+  margin-left: 25px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 
+#display-container {
+  grid-area: 1 / 1 / 6 / 4;
+}
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.products * {
+  margin: 5px 0px;
+}
+
+.cart-container {
+  grid-area: 1 / 4 / 2 / 6;
+}
+
+.cart-item {
+  display: block;
+}
+
+#checkout-container {
+  grid-area: 2 / 4 / 3 / 6;
+}
+
+#checkout-container input {
+  display: block;
+  margin: 3px;
+}
+#checkout-container label {
+  display: block;
+  margin: 3px;
+}
